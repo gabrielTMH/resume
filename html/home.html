@@ -1,0 +1,24 @@
+<!-- home.html -->
+{% extends 'base.html' %}
+{% block title %}Home - My Personal Site{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <!-- Profile Image -->
+        <img src="static/images/profile.jpg" alt="Profile Image" class="img-fluid profile-image">
+    </div>
+    <div class="col-md-8">
+        <!-- Profile Card -->
+        <div class="card teal-bg">
+            <div class="card-body text-white">
+                <h1 class="custom-card-title">AI sollutions </h1>
+                <h2 class="custom-card-text">Do you have data you dont know what to do with? Are you strugeeling keeping up with competitors due to
+                  a lack of AI? Are you looking for somthing more advanced than simple decision trees, CNNs and RNNs? Keep up to date with the
+                  future of transformer technology and let my AI power your business into higher sales, customer relations, and employee satisfaction.
+              </h2>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
