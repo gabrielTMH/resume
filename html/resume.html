@@ -1,0 +1,295 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Portfolio
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="../static/css/style.css">
+<style>
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #E8F0F2; /* Lighter teal background for a subtle look */
+}
+
+/* Experience section styling */
+.experience-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Softer shadow for a lighter look */
+}
+
+h3 {
+    color: #008080; /* Teal color for primary headings */
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #333333;
+    margin-top: 20px;
+}
+
+/* Experience dates and details styling */
+.experience-dates {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.experience-details {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-details li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.experience-details li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #004D40; /* Darker teal for contrast and emphasis */
+}
+
+.skills-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+    color: #008080; /* Teal */
+    margin-bottom: 15px;
+}
+
+.skill-category h4 {
+    color: #004D40; /* Darker teal for headings */
+    margin-bottom: 10px;
+}
+
+.skill-category p {
+    color: #333; /* Dark grey for contrast */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.experience-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Softer shadow for a lighter look */
+}
+.contact-section {
+    background-color: #f5f5f5; /* Light grey background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #008080; /* Teal */
+    font-size: 1.5rem; /* Larger font size for the title */
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #333; /* Dark grey text */
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p i {
+    margin-right: 10px;
+    font-size: 1.2rem; /* Larger icon size */
+    color: #008080; /* Teal color for icons */
+}
+
+.contact-info p a {
+    color: #008080; /* Teal color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info p a:hover {
+    color: #005a5a; /* Darker teal on hover */
+}
+.download-button {
+    position: fixed;
+    top: 100px; /* Adjust as needed */
+    left: 30px; /* Adjust as needed */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008080; /* Teal */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    z-index: 9999; /* Ensure it appears above other content */
+}
+
+.download-button:hover {
+    background-color: #005a5a; /* Darker teal on hover */
+}
+</style>
+<div class="container mt-5">
+      <a href="../static/images/Resume.pdf" class="download-button" download><i class="fas fa-download"></i></a>
+
+    <div class="card">
+      <div class="contact-section">
+    <h3 class="section-title">Contact</h3>
+    <div class="contact-info">
+        <p><i class="far fa-envelope"></i> gabrielmantione@gmail.com</p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gabriel-mantione-holmes-7720a5213/" target="_blank">LinkedIn</a></p>
+    </div>
+</div>
+        <div class="card-body">
+
+            <!-- Contact Information -->
+
+
+            <!-- Top Skills -->
+
+            <!-- Publications -->
+          <div class="publications-section">
+    <h3 class="section-title">Publications</h3>
+    <div class="publication-info">
+        <p>Utilizing Priming to Identify Optimal Class Ordering to Alleviate Catastrophic Forgetting</p>
+    </div>
+</div>
+
+<div class="summary-section">
+    <h3 class="section-title">Summary</h3>
+    <div class="summary-info">
+        <p>Goal-oriented machine learning researcher and engineer with over four years of specialized experience in natural language processing (NLP). Proven track record in designing and training CNNs, VAEs, and Transformer models. Expertise in machine learning and deep learning algorithms, coupled with excellent communication and collaboration skills.</p>
+    </div>
+</div>
+            <!-- Experience -->
+             <h3 class="section-title">Professional Experience</h3>
+
+    <!-- Intuitive-Leap Consultant -->
+    <div class="experience-section">
+    <div class="experience-item">
+        <h4>Intuitive-Leap Consultant</h4>
+        <p class="experience-dates">July 2023 - Present | Portland, Oregon Metropolitan Area</p>
+        <ul class="experience-details">
+            <li>Strategically advised on Azure database architectures, driving enhanced performance and scalability.</li>
+            <li>Expertly debugged and optimized diverse codebases, ensuring seamless deployment and robust application performance.</li>
+            <li>Executed comprehensive penetration testing, fortifying systems against advanced security threats.</li>
+            <li>Spearheaded the development of a cutting-edge C# web application, setting new standards in user engagement and functionality.</li>
+        </ul>
+    </div>
+
+    <!-- Lewis & Clark College CIO Support -->
+    <div class="experience-item">
+        <h4>Lewis & Clark College CIO Support</h4>
+        <p class="experience-dates">November 2019 - October 2023 | Portland, Oregon Metropolitan Area</p>
+        <ul class="experience-details">
+            <li>Pioneered the development of an Alexa skill, mastering Node.js, Git, GitHub, and Alexa ASK through self-directed learning.</li>
+            <li>Acted as the principal technical consultant for Amazon’s Alexa Skill Pilot Program, delivering critical insights and direction.</li>
+            <li>Developed a comprehensive proof of concept for key stakeholders, demonstrating innovative applications of voice technology in education.</li>
+        </ul>
+    </div>
+
+    <!-- Teaching Assistant -->
+    <div class="experience-item">
+        <h4>Teaching Assistant - CS-383 Algorithm Design and Analysis</h4>
+        <p class="experience-dates">August 2022 - December 2022 | Portland, Oregon, United States</p>
+        <ul class="experience-details">
+            <li>Conducted engaging instructional sessions, significantly enhancing student understanding of complex algorithms.</li>
+            <li>Provided invaluable one-on-one support during office hours, greatly improving student academic performance.</li>
+            <li>Assessed and graded a wide range of projects, ensuring fair and constructive feedback.</li>
+        </ul>
+    </div>
+
+    <!-- Undergraduate Researcher -->
+    <div class="experience-item">
+        <h4>Undergraduate Researcher</h4>
+        <p class="experience-dates">May 2022 - January 2023 | Colorado Springs, Colorado, United States</p>
+        <ul class="experience-details">
+            <li>Gained expertise in an array of machine learning and natural language processing technologies, contributing to cutting-edge research projects.</li>
+            <li>Engaged with the latest NLP research, providing foundational insights for experimental strategies and innovations.</li>
+            <li>Collaborated closely with research advisors to present findings, leading to significant advancements in NLP methodologies.</li>
+            <li>Authored a seminal paper on data ordering for NLP, offering groundbreaking insights into efficient, generalizable learning heuristics.</li>
+        </ul>
+    </div>
+
+    <!-- Section Editor -->
+    <div class="experience-item">
+        <h4>Section Editor - The Pioneer Log</h4>
+        <p class="experience-dates">January 2020 - January 2023 | Portland, Oregon, United States</p>
+        <ul class="experience-details">
+            <li>Led the Sports and Opinions sections, driving content strategy and enhancing the newspaper’s editorial quality.</li>
+            <li>Orchestrated the ideation and execution of compelling stories, fostering a culture of creativity and journalistic excellence.</li>
+            <li>Championed the adoption of AP style, elevating the publication’s professionalism and readability.</li>
+        </ul>
+    </div>
+
+    <!-- Intern at Unifi -->
+    <div class="experience-item">
+        <h4>Intern</h4>
+        <p class="experience-dates">June 2021 - August 2021 | California, United States</p>
+        <ul class="experience-details">
+            <li>Revolutionized user interface design, significantly enhancing accessibility and user satisfaction.</li>
+            <li>Conducted in-depth technology research, advocating for the adoption of modern frameworks to streamline development processes.</li>
+            <li>Led a dedicated virtual team in the agile development and timely deployment of critical web projects.</li>
+        </ul>
+    </div>
+    </div>
+
+      <h3 class="section-title">Skills</h3>
+            <div class="skills-section">
+
+    <div class="skills-container">
+        <div class="skill-category">
+            <h4>Languages</h4>
+            <p>Java, C, C++, C#, VB, Python, HTML, CSS, PHP, JavaScript, X86, SQL, R, Haskell, Prolog, Ruby</p>
+        </div>
+        <div class="skill-category">
+            <h4>Frameworks</h4>
+            <p>Bootstrap, Node.js, JUnit, PyTorch, Flask, Django, .NET, LAMP</p>
+        </div>
+        <div class="skill-category">
+            <h4>Libraries</h4>
+            <p>React, JQuery, TensorFlow, Keras, Scikit-Learn, NLTK, Pandas, Gensim, SciPy, NumPy, SpaCy</p>
+        </div>
+        <div class="skill-category">
+            <h4>Concepts</h4>
+            <p>OOP, Data Structures, Algorithms, AI/ML, Cloud Computing</p>
+        </div>
+        <div class="skill-category">
+            <h4>Tools</h4>
+            <p>Git, GitHub, Jira, Oracle VM VirtualBox, IntelliJ, Atom, VSC, Slack, Trello, MySQL, Azure</p>
+        </div>
+        <div class="skill-category">
+            <h4>Soft Skills</h4>
+            <p>Adaptability, Collaboration, Attention to Detail, Lateral Thinking</p>
+        </div>
+    </div>
+</div>
+            <!-- Education -->
+            <h3>Education</h3>
+            <p>Lewis & Clark College<br>
+            Bachelor's degree, Computer Science and Rhetoric and Media Studies (2019 - 2023)</p>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}

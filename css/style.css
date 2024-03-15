@@ -1,0 +1,90 @@
+
+
+.social-icons-list {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column; /* Display as a vertical list */
+    align-items: flex-end; /* Justify content to the right */
+    width: auto;
+    background-color: #fff;
+    padding: 10px; /* Decrease padding */
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.social-icons-list a:hover {
+    color: #2196f3; /* Change color on hover */
+}
+
+.socialicons {
+    margin: 10px; /* Adjust margin */
+    color: #009688;
+    font-size: 28px; /* Increase font size */
+}
+
+.socialicons a:hover {
+    color: #2196f3;
+}
+  body {
+      background-color: #f0f0f0;
+  }
+
+  .card-panel {
+      padding: 20px;
+  }
+  .profile-image {
+      width: 200px;
+      height: auto;
+  }
+  .page-footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333; /* Example background color */
+      color: #fff; /* Example text color */
+      padding: 20px 0; /* Add some padding for spacing */
+  }
+  .custom-navbar {
+    background-color: teal; /* Red background color */
+    color: #fff; /* White text color */
+}
+
+.custom-navbar .nav-link {
+    color: #fff; /* White text color for nav links */
+}
+
+.custom-navbar .navbar-brand {
+    color: #fff; /* White text color for navbar brand */
+}
+.teal-bg {
+    background-color: teal;
+    color: white; /* Set text color to white */
+}
+
+.white-text {
+    color: white; /* Set text color to white */
+}
+.teal-text {
+    color: teal;
+}
+h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+h3 {
+    font-size: 0.9rem; /* Slightly smaller than h2 */
+    font-weight: bold; /* Keeping it bold for distinction */
+}
+
+h4 {
+    font-size: 0.8rem; /* Slightly smaller than h3 */
+    font-weight: normal; /* Less emphasis than h3 */
+}
